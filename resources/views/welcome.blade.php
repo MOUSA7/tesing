@@ -72,6 +72,11 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
+                        <a class="nav-link" href="{{ route('posts.create') }}">{{ __('Create Post') }}</a>
+
+                        <a class="nav-link" href="{{ route('posts') }}">{{ __('Display Post') }}</a>
+
+                        <a class="nav-link" href="{{ route('contact') }}">{{ __('Contact') }}</a>
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
